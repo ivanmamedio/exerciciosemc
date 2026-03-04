@@ -15,7 +15,13 @@ int main() {
         printf("\n--- Cadastro Aluno %d ---\n", i+1);
 
         printf("Nome: ");
-        scanf("%s", alunos[i].nome);
+        fgests(alunos[i].nome, 50, stdin);
+
+        // Remove o newline do final (se existir)
+        size_t len = strlen(alunos[i].nome);
+        if (len > 0 && alunos[i].nome[len-1] == '\n') {
+            alunos[i].nome[len-1] = '\0';
+        }
 
         printf("Idade: ");
         scanf("%d", &alunos[i].idade);
