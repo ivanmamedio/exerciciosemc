@@ -6,7 +6,7 @@ int main() {
     int secreto, palpite, tentativas = 0;
 
     // Gerando número aleatório 
-    sran(time(NULL));
+    srand(time(NULL));
     secreto = rand() % 100 + 1; // Número entre 1 e 100
 
     printf("=== JOGO DE ADIVINHAÇÃO ===\n");
