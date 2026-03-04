@@ -15,7 +15,7 @@ int main() {
         printf("\n--- Cadastro Aluno %d ---\n", i+1);
 
         printf("Nome: ");
-        fgests(alunos[i].nome, 50, stdin);
+        fgets(alunos[i].nome, 50, stdin);
 
         // Remove o newline do final (se existir)
         size_t len = strlen(alunos[i].nome);
