@@ -25,5 +25,14 @@ int main() {
     }
 
     // Listagem 
-}
+    printf("\n=== LISTA DE ALUNOS ===\n");
+    for(int i = 0; i < 3; i++) {
+        printf("Aluno %d:\n", i+1);
+        printf(" Nome: %s\n", alunos[i].nome);
+        printf(" Idade: %d\n", alunos[i].idade);
+        printf(" Nota: %.2f\n", alunos[i].nota);
+        printf(" Status: %s\n", alunos[i].nota >= 7 ? "Aprovado" : "Reprovado");
+    }
+
+    return 0;
 }
