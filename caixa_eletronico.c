@@ -16,14 +16,14 @@ int main() {
 
         switch (opcao){
             case 1:
-                printf("Saldo atual: r$ %2.f\n"), saldo;
+                printf("Saldo atual: R$ %.2f\n", (double)saldo);
                 break;
             case 2:
                 printf("Valor do depósito: R$ ");
                 scanf("%f", &valor);
                 if (valor > 0) {
                     saldo += valor;
-                    printf("Depósito realizado. Novo saldo: R$ %2.f\n", saldo);
+                    printf("Depósito realizado. Novo saldo: R$ %.2f\n", (double)saldo);
                 } else {
                     printf("Valor inválido.\n");
                 }
@@ -33,8 +33,8 @@ int main() {
                 scanf("%f", &valor);
                 if (valor > 0 && valor <= saldo) {
                     saldo -= valor;
-                    printf("Saque realizado. Novo saldo: R$ %.2f\n", saldo);
-                } else if (valor > valor) {
+                    printf("Saque realizado. Novo saldo: R$ %.2f\n", (double)saldo);
+                } else if (valor > saldo) {
                     printf("Saldo insuficiente.\n");
                 } else {
                     printf("Valor inválido.\n");
