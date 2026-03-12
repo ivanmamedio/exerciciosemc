@@ -3,7 +3,8 @@
 
 // Função que verifica se um número é primo
 bool eh_primo(int n) {
-    if (n <= 2) return false;
+    // Números menores ou iguais a 1 não são primos
+        if (n <= 1) return false;
     if (n == 2) return true;
     if (n % 2 == 0) return false;
 
