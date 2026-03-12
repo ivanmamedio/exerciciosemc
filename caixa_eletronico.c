@@ -14,7 +14,7 @@ int main() {
         printf("Escolha uma opção: ");
         scanf("%d", &opcao);
 
-        switch("%d", &opcao) {
+        switch (opcao){
             case 1:
                 printf("Saldo atual: r$ %2.f\n"), saldo;
                 break;
